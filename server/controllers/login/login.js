@@ -1,9 +1,7 @@
 const db = require("../../config/db");
 const md5 = require("md5");
 const jwt = require("jsonwebtoken");
-require("dotenv").config();
-
-const JWT_SECRET = process.env.JWT_SECRET;
+const JWT_SECRET = "businessmanagement";
 
 exports.login = async (req, res) => {
   const { emailOrUsername, password } = req.body;

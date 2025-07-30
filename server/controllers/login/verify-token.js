@@ -1,7 +1,5 @@
 const jwt = require("jsonwebtoken");
-require("dotenv").config();
-
-const JWT_SECRET = process.env.JWT_SECRET;
+const JWT_SECRET = "businessmanagement";
 
 exports.verifyToken = (req, res) => {
   const token = req.cookies.token;
