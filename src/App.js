@@ -121,6 +121,7 @@ export default function App() {
         </>
       )}
       <Routes>
+        <Route path="/" element={<Navigate to="/authentication/sign-in" replace />} />
         {getRoutes(routes)}
         <Route path="*" element={<PageNotFound />} />
       </Routes>
